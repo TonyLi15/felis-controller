@@ -33,7 +33,7 @@ abstract class BaseYcsbExperiment extends Experiment with YcsbContended with Ycs
   override def boot(): Unit = {
     val args = Array(os.Path.expandUser(Experiment.Binary).toString,
       "-c", Experiment.ControllerHost,
-      "-n", "host1",
+      "-n", "cygnus",
       "-w", "ycsb") ++ cmdArguments()
 
     println(s"Making outdir ${outputDir()}")

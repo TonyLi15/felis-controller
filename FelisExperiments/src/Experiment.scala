@@ -12,10 +12,10 @@ import scala.util.{Failure, Success, Try}
 class ExperimentRunException extends Exception {}
 
 object Experiment {
-  var ControllerHost = System.getProperty("controller.host", "127.0.0.1:3148")
-  var ControllerHttp = System.getProperty("controller.http", "127.0.0.1:8666")
-  var Binary = "~/workspace/felis/buck-out/gen/db#release"
-  var WorkingDir = "~/workspace/felis/results"
+  var ControllerHost = System.getProperty("controller.host", "133.27.19.50:3149")
+  var ControllerHttp = System.getProperty("controller.http", "133.27.19.50:8667")
+  var Binary = "~/felis/buck-out/gen/db#release"
+  var WorkingDir = "~/felis/results"
 }
 
 trait Experiment {
